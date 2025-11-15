@@ -1,4 +1,7 @@
-<aside markdown="1" style="float: right; top: 1rem; width: 25%; position: sticky;">
+<aside
+    markdown="1"
+    class="toc"
+>
 
 # Contents
 
@@ -7,8 +10,12 @@
 
 </aside>
 
-<div markdown="1" style="width: 70%">
+<div markdown="1" class="main_content_inner">
+<div markdown="1" class="section_header">
+
 ## **_About Me_**
+
+</div>
 
 _Hi, I’m Marco, a software engineer who loves building intelligent systems, clean architectures, and all the engineering magic that makes smart products actually work in the real world._
 
@@ -18,8 +25,14 @@ _What drives me is the mix of curiosity and discipline: exploring new ideas, ite
 
 _If you’re looking for someone who can go deep into AI, cares about quality, and actually ships, that’s me._
 
+---
+
+
+<div markdown="1" class="section_header">
 
 ## **_Checkout My Projects_**
+
+</div>
 
 #### _Multimodal RAG_
 People struggle to keep track of scattered documents, images, and notes — and even more to *search and reason* over them.  
@@ -40,8 +53,14 @@ Debugging is frustrating when tools only show errors without context, insight, o
 DebugAgent aims to make debugging *collaborative* by giving developers an AI assistant that explains issues, explores possibilities, and helps you think through tricky code.  
 🔗 [Try It Out →](https://github.com/marcoslashpro/debugagent)
 
+---
+
+
+<div markdown="1" class="section_header">
 
 ## **_Here I Speak My Mind_**
+
+</div>
 
 #### _Agent Frameworks Standoff_
 Everyone is building agents, but nobody fully agrees on **how** to build them.  
@@ -67,8 +86,13 @@ From **RLHF** to **robotics**, RL opens doors that LLMs simply can’t.
 This post is a simple, practical roadmap for anyone curious about how RL works, why it matters, and where it might take us.  
 🔗 [Read more →](./posts/{slug}.md)
 
+---
+
+<div markdown="1" class="section_header">
 
 ## **_ML & AI_**
+
+</div>
 
 #### _Linear Regression Vs Neural Network Standoff_
 If **ML** teaches us anything, it’s that more complex $$\neq$$ better.
