@@ -3,3 +3,9 @@ plugins:
 - jekyll-remote-theme
 
 title: Marco Tambasco
+
+kramdown:
+  toc_levels: 2..4
+
+include:
+- assets/css/styles.css

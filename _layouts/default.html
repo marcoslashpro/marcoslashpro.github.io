@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" media="screen"
         href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/styles.css?v=' | append: site.github.build_revision | relative_url }}">
-
     {% seo %}
     {% include head-custom.html %}
 </head>
@@ -17,17 +16,21 @@
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <header class="inner">
+        <header style="display: flex; flex-direction: column;" class="inner">
 
-            <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
+            <h1 style="align-self: center;" id="project_title">{{ site.title | default: site.github.repository_name }}
+            </h1>
             <h2 id="project_tagline">
-                <p>
-                    <img class="small_icon" src="/assets/images/blacktocat.png" /><a
-                        href="https://github.com/marcoslashpro">GitHub</a><br>
-                    <img class="small_icon" src="assets/images/linkedin_icon.png" /><a
-                        href="https://www.linkedin.com/in/marco-tambasco-758086290/">LinkedIn</a><br>
-                    <img class="small_icon" src="assets/images/gmail_icon.png" /><a
-                        href="mailto:tambascomarco35@gmail.com">Email Me</a>
+                <p class="sub_header">
+                    <cite>Where intuition, math-driven thinking and SOLID engineering meet.</cite><br>
+                <div style="display: flex; justify-content: center;">
+                    <p><img class="small_icon" src="/assets/images/blacktocat.png" /><a
+                            href="https://github.com/marcoslashpro">GitHub</a></p>
+                    <p>| <img class="small_icon" src="assets/images/linkedin_icon.png" /><a
+                            href="https://www.linkedin.com/in/marco-tambasco-758086290/">LinkedIn</a></p>
+                    <p>| <img class="small_icon" src="assets/images/gmail_icon.png" /><a
+                            href="mailto:tambascomarco35@gmail.com">Email Me</a></p>
+                </div>
                 </p>
             </h2>
 
