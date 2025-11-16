@@ -24,6 +24,8 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+base_url: ""
+
 # Theme-specific settings
 
 # If you want to link only specific pages in your header, use this and add the path to the pages

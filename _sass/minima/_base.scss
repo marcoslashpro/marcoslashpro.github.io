@@ -77,10 +77,6 @@ figure > img {
   display: block;
 }
 
-figcaption {
-  font-size: $small-font-size;
-}
-
 
 
 /**
@@ -106,14 +102,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-
+p {
+  font-size: $base-font-size !important;
+}
 
 /**
  * Links
  */
 a {
   color: $link-base-color;
-  text-decoration: none;
+  font-size: $base-font-size !important;
 
   &:visited {
     color: $link-visited-color;
