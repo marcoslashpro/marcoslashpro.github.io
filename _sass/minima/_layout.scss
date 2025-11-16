@@ -6,9 +6,11 @@
   width: 100%;
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
-  background-color: $background-color;
-  border-top: 5px solid $border-color-03;
-  border-bottom: 1px solid $border-color-01;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+  background: var(--primary-blue);
+  background: linear-gradient(332deg,var(--primary-blue) 0%, $background-color 60%);
 }
 
 .site-title {
@@ -126,6 +128,9 @@
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
+
+  background: var(--primary-blue);
+  background: linear-gradient(332deg,var(--primary-blue) 0%, $background-color 60%);
 }
 
 .footer-heading {
@@ -220,7 +225,20 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+
+    > h3 {
+      margin: 0;
+    }
+
+    margin-bottom: 1rem;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+
+    border: 0.2rem solid transparent;
+    border-image: linear-gradient(
+      166deg,
+      var(--primary-blue) 0%,
+      $background-color 65%
+    ) 1; /* The '1' slice value is necessary to show the whole border */
   }
 }
 
@@ -232,6 +250,8 @@
 .post-link {
   display: block;
   @include relative-font-size(1.5);
+
+  color: inherit !important;
 }
 
 

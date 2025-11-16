@@ -1,2 +1,50 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+
+
+.homepage-hero-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    padding: 0rem 1rem 0rem 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--primary-blue);
+    background: linear-gradient(30deg, var(--primary-blue) 0%, $background-color 65%) ;
+    border: 5px solid white;
+    color: white;
+}
+
+.homepage-hero-wrapper > h1.header, .homepage-hero-wrapper > p {
+    grid-column: 1 / 1;
+}
+
+.homepage-hero-wrapper > p {
+    grid-column: 1 / 1;
+    text-shadow: 1px 2px 2px $background-color;
+}
+
+h1.header {
+    font-weight: bolder !important;
+    margin: 1rem;
+    text-shadow: 3px 1px 2px $background-color;
+}
+
+.homepage-hero-wrapper > .profile-pic-wrapper {
+    grid-column: 2 / 2;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 1rem;
+}
+
+a.small_icon {
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin-right: 0.5rem !important;
+    max-width: 24px;
+    max-height: 24px;
+}
