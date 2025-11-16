@@ -228,10 +228,15 @@
       margin: 0;
     }
 
-    margin-bottom: $spacing-unit;
+    margin-bottom: 1rem;
     padding: 0.5rem 0.5rem 0rem 0.5rem;
 
-    border: 0.2rem solid var(--primary-blue);
+    border: 0.2rem solid transparent;
+    border-image: linear-gradient(
+      166deg,
+      var(--primary-blue) 0%,
+      $background-color 65%
+    ) 1; /* The '1' slice value is necessary to show the whole border */
   }
 }
 

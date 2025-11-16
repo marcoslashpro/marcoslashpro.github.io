@@ -6,26 +6,20 @@
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
-            <svg class="svg-icon orange">
-              <path d="M12.8 16C12.8 8.978 7.022 3.2 0 3.2V0c8.777 0 16 7.223 16 16h-3.2zM2.194
-                11.61c1.21 0 2.195.985 2.195 2.196 0 1.21-.99 2.194-2.2 2.194C.98 16 0 15.017 0
-                13.806c0-1.21.983-2.195 2.194-2.195zM10.606
-                16h-3.11c0-4.113-3.383-7.497-7.496-7.497v-3.11c5.818 0 10.606 4.79 10.606 10.607z"
-              />
-            </svg><span>Subscribe</span>
-          </a>
+          <a class="small_icon" href="{{ site.author.github }}"><span><img src="../assets/images/github_icon.png"
+                alt="GitHub Icon"></span></a>
+          <a class="small_icon" href="{{ site.author.linkedin }}"><span><img src="../assets/images/linkedin_icon.png"
+                alt="LinkedIn Icon"></span></a>
+          <a class="small_icon" href="mailto:{{ site.author.email }}"><span></span><img src="../assets/images/gmail_icon.png"
+              alt="Gmail Icon"></a>
         </p>
-      {%- if site.author %}
+        {%- if site.author %}
         <ul class="contact-list">
           {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          <li class="p-name">© 2025 - {{ site.author.name | escape }} | No Rights Reserved, I swear</li>
           {%- endif %}
         </ul>
-      {%- endif %}
+        {%- endif %}
       </div>
       <div class="footer-col">
         <p>{{ site.description | escape }}</p>
