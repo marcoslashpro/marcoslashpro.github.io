@@ -9,6 +9,8 @@
 
   // Positioning context for the mobile navigation icon
   position: relative;
+  background: var(--primary-blue);
+  background: linear-gradient(332deg,var(--primary-blue) 0%, $background-color 60%);
 }
 
 .site-title {
@@ -124,6 +126,9 @@
 .site-footer {
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
+
+  background: var(--primary-blue);
+  background: linear-gradient(332deg,var(--primary-blue) 0%, $background-color 60%);
 }
 
 .footer-heading {
@@ -218,7 +223,15 @@
   list-style: none;
 
   > li {
+
+    > h3 {
+      margin: 0;
+    }
+
     margin-bottom: $spacing-unit;
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+
+    border: 0.2rem solid var(--primary-blue);
   }
 }
 
@@ -230,6 +243,8 @@
 .post-link {
   display: block;
   @include relative-font-size(1.5);
+
+  color: inherit !important;
 }
 
 
