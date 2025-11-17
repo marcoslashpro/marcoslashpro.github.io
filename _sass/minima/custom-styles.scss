@@ -2,6 +2,10 @@
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
 
 
+.spacer {
+    margin-top: $spacing-unit * 1.865;
+}
+
 .homepage-hero-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -10,8 +14,26 @@
     justify-content: center;
     padding: 0rem 1rem 0rem 1rem;
     margin-bottom: 2rem;
-    border: 2px solid var(--primary-blue);
-    color: white;
+}
+
+.homepage-hero-wrapper>h1.header {
+    color: black;
+    grid-column: 1 / 1;
+}
+
+.homepage-hero-wrapper>h2 {
+    grid-column: 1 / 1;
+    text-shadow: 1px 2px 2px $background-color;
+    font-size: 2rem;
+    margin: 1.75rem;
+}
+
+h1.header {
+    font-size: 3rem !important;
+    margin: 1rem;
+    margin-left: 0px;
+    margin-bottom: 0rem;
+    text-shadow: 3px 1px 2px $background-color;
 }
 
 @media (max-width: 768px) {
@@ -19,25 +41,17 @@
         display: flex;
         flex-direction: column;
     }
+
+    h1.header {
+        font-size: 2rem !important;
+    }
+
+    .homepage-hero-wrapper>h2 {
+        font-size: 1.5rem !important;
+    }
 }
 
-.homepage-hero-wrapper > h1.header, .homepage-hero-wrapper > p {
-    grid-column: 1 / 1;
-}
-
-.homepage-hero-wrapper > p {
-    grid-column: 1 / 1;
-    text-shadow: 1px 2px 2px $background-color;
-}
-
-h1.header {
-    font-weight: bolder !important;
-    margin: 1rem;
-    margin-left: 0px;
-    text-shadow: 3px 1px 2px $background-color;
-}
-
-.homepage-hero-wrapper > .profile-pic-wrapper {
+.homepage-hero-wrapper>.profile-pic-wrapper {
     grid-column: 2 / 2;
     grid-row: 1 / 3;
     display: flex;
@@ -46,11 +60,32 @@ h1.header {
     margin: 1rem;
 }
 
-a.small_icon {
+.homepage-hero-wrapper a {
+    color: $secondary-red;
+    transition-property: color;
+    transition-duration: 350ms;
+}
+
+.homepage-hero-wrapper a:hover {
+    color: black;
+    transform: scale(1.08);
+}
+
+@media (prefers-color-scheme: dark) {
+    .homepage-hero-wrapper>h1.header {
+        color: white;
+    }
+
+    .homepage-hero-wrapper a:hover {
+        color: white;
+    }
+}
+
+a.small_icon img {
     margin: 0 !important;
     box-shadow: none !important;
     border: none !important;
     margin-right: 0.5rem !important;
-    max-width: 24px;
-    max-height: 24px;
+    max-width: 18px !important;
+    max-height: 18px !important;
 }

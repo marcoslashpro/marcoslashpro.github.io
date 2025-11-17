@@ -10,7 +10,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
-
+  font-family: cursive;
 }
 
 
@@ -19,7 +19,7 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height};
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
