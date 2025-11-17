@@ -686,6 +686,8 @@ table {
   list-style: none; }
   .post-list > li {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
     border: 0.2rem solid transparent;
     border-image: linear-gradient(166deg, var(--primary-blue) 0%, var(--minima-background-color) 50%) 1;
     transition: transform 0.3s ease-in-out, border-image 0.4s ease-in-out; }
@@ -696,7 +698,9 @@ table {
       text-overflow: ellipsis; }
   .post-list span.post-meta,
   .post-list a.post-link {
-    transition: color 0.3s ease-in-out; }
+    transition: color 0.3s ease-in-out;
+    display: inherit;
+    flex-direction: column; }
   .post-list > li:hover {
     border: 0.2rem solid transparent;
     border-image: linear-gradient(166deg, #DC3545 0%, var(--minima-background-color) 90%) 1;
@@ -709,6 +713,9 @@ table {
     @media (prefers-color-scheme: dark) {
       .post-list > li:hover a.post-link {
         color: white !important; } }
+
+span.post-meta, a.post-link > h2 {
+  align-self: center; }
 
 .post-meta {
   color: var(--minima-brand-color); }

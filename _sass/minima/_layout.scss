@@ -251,6 +251,8 @@
     }
 
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
 
     border: 0.2rem solid transparent;
     border-image: linear-gradient(166deg,
@@ -264,6 +266,8 @@
   span.post-meta,
   a.post-link {
     transition: color 0.3s ease-in-out;
+    display: inherit;
+    flex-direction: column;
   }
 
   >li:hover {
@@ -289,6 +293,10 @@
       }
     }
   }
+}
+
+span.post-meta, a.post-link > h2 {
+  align-self: center;
 }
 
 .post-meta {
