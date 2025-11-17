@@ -395,7 +395,8 @@ p {
  * Links
  */
 a {
-  color: var(--minima-link-base-color);
+  color: #DC3545 !important;
+  text-decoration: none;
   font-size: 1rem !important; }
   a:visited {
     color: var(--minima-link-visited-color); }
@@ -529,7 +530,8 @@ table {
   font-size: 1.125rem !important;
   margin-bottom: 0;
   float: left;
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit !important; }
   @media screen and (max-width: 600px) {
     .site-title {
       padding-right: 45px; } }
@@ -539,8 +541,7 @@ table {
 .site-title:hover,
 .page-link:hover {
   color: #DC3545 !important;
-  transition-property: color !important;
-  transition-duration: 350ms !important;
+  transition: color 350ms ease-in-out !important;
   text-decoration: none !important; }
 
 .site-nav {
@@ -576,7 +577,7 @@ table {
     display: block;
     padding-bottom: 5px; }
   .site-nav .page-link {
-    color: var(--minima-text-color);
+    color: var(--minima-text-color) !important;
     text-decoration: none;
     line-height: 1.5;
     display: block;

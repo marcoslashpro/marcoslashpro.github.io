@@ -20,6 +20,7 @@
   margin-bottom: 0;
   float: left;
   text-decoration: none;
+  color: inherit !important;
 
   @include media-query($on-palm) {
     padding-right: 45px;
@@ -34,8 +35,7 @@
 .site-title:hover,
 .page-link:hover {
   color: $secondary-red !important;
-  transition-property: color !important;
-  transition-duration: 350ms !important;
+  transition: color 350ms ease-in-out !important;
   text-decoration: none !important;
 }
 
@@ -85,7 +85,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $text-color !important;
     text-decoration: none;
     line-height: $base-line-height;
     display: block;

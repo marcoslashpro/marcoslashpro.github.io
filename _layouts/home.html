@@ -30,7 +30,7 @@ layout: base
         <span class="post-meta"><i>{{ post.date | date: date_format }}</i></span>
 
         {%- if site.minima.show_excerpts -%}
-          {{ post.excerpt | truncatewords: 15}}
+          {{ post.excerpt | strip_html | truncatewords: 25}}
         {%- endif -%}
 
       </a>

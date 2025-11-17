@@ -110,7 +110,8 @@ p {
  * Links
  */
 a {
-  color: $link-base-color;
+  color: $secondary-red !important;
+  text-decoration: none;
   font-size: $base-font-size !important;
 
   &:visited {
