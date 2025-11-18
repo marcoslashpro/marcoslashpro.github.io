@@ -325,6 +325,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 1rem/1.5;
+  font-family: 'Times New Roman', Times, serif;
   color: var(--minima-text-color);
   background-color: var(--minima-background-color);
   -webkit-text-size-adjust: 100%;
