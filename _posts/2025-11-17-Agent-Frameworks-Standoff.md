@@ -3,6 +3,12 @@ layout: post
 permalink: agent_frameworks_standoff
 ---
 
+* TOC
+{:toc}
+
+
+START
+
 In 2025, AI is the most rapidly evolving field that there is. Everyone is jumping on the LLM-driven train, whether that
 be for automations, tutoring, so on and so forth.
 
@@ -418,8 +424,7 @@ That said, for **multi-agent systems**, the ecosystem feels less stable: the doc
 solutions don’t work out of the box, and projects often require many additional dependencies. Community support is
 strong, but this also means many solutions are fragile or poorly maintained.
 
-For general LLM application development, `langchain` is a solid choice. For agentic or multi-agent systems, you may want
-to explore alternative frameworks — we’ll look at some of those later
+For general LLM application development, `langchain` is a solid choice. For agentic or multi-agent systems, you may want to explore alternative frameworks — we’ll look at some of those later
 
 # CrewAI
 
@@ -934,7 +939,7 @@ frameworks. Combined with `pydantic-evals` and `TestModel`, you get not just age
 
 This feels like a mature, stable, and well-engineered library. Highly recommended.
 
-## Comparative Wrap-Up
+# Comparative Wrap-Up
 
 Having explored **LangChain**, **Pydantic-AI**, and **CrewAI** in depth, it becomes clear that these frameworks don’t
 just differ in their abstractions and workflows — they almost embody **different programming paradigms applied to
@@ -967,7 +972,7 @@ type safety ensuring long-term maintainability.
 
 ---
 
-### Final Thoughts
+# Final Thoughts
 
 Each framework excels in a different dimension:
 

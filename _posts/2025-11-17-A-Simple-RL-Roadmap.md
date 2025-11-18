@@ -4,6 +4,11 @@ permalink: simple_rl_roadmap
 title: A Simple RL Roadmap
 ---
 
+* TOC
+{:toc}
+
+
+START
 
 **Reinforcement Learning** (**RL** for short) is a truly fascinating and rapidly evolving field of **Machine Learning**. From agents beating world champions at complex games like **Go and Atari**, to enabling **autonomous intelligent machines** to learn and **interact** with the real world, the possibilities RL brings to the table are **incredible** (and, yes, somewhat scary!). But what exactly is it?
 
