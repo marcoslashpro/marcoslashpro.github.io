@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: simple_rl_roadmap
+title: A Simple RL Roadmap
 ---
 
 

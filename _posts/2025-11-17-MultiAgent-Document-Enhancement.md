@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: multi_agent_document_enhancement
+title: Multi Agent Document Enhancement
 ---
 
 
