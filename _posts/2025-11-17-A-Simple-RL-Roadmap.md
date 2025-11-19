@@ -2,13 +2,8 @@
 layout: post
 permalink: simple_rl_roadmap
 title: A Simple RL Roadmap
+summary: "A small summary of the post, it might actually be longer than a small summary, it could be as long as one wants to be completely honest, it does not matter to me nor to the rendering engine, we all are happy. Me of the future can write whatever he wants, me of today feels like a hacker, and the program... just does what he needs to do, until AI becomes our program and then we are doomed, but hey! I hallucinate more than ChatGPT!"
 ---
-
-* TOC
-{:toc}
-
-
-START
 
 **Reinforcement Learning** (**RL** for short) is a truly fascinating and rapidly evolving field of **Machine Learning**. From agents beating world champions at complex games like **Go and Atari**, to enabling **autonomous intelligent machines** to learn and **interact** with the real world, the possibilities RL brings to the table are **incredible** (and, yes, somewhat scary!). But what exactly is it?
 
@@ -413,3 +408,8 @@ Q^∗(s,a)=∑_{s^\prime \in S}P(s^\prime∣s,a)[R(s,a,s^\prime)+γ\max_{a^\prim
 $$
 
 The last one!
+
+END
+
+* TOC
+{:toc}

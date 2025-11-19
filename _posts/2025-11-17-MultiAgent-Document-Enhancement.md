@@ -4,12 +4,6 @@ permalink: multi_agent_document_enhancement
 title: Multi Agent Document Enhancement
 ---
 
-* TOC
-{:toc}
-
-
-START
-
 
 One of the main features of **CareerKit** as it stands right now is the **multi-agent document enhancement** system(**MADE**) that allows for fine-grained tailoring of **CV** and **Cover Letter(CVL)** for specific, user-required job listings. Let’s dive deep into how this works.
 
@@ -158,3 +152,8 @@ If you guys have tried **CareerKit**, feel free to use the same email as above t
 Oh last thing, let me know in the comments below if you would like me to deep dive into evaluations for AI systems, I would love to do so!
 
 Until next time!
+
+END
+
+* TOC
+{:toc}

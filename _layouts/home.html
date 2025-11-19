@@ -26,11 +26,12 @@ layout: base
     {%- for post in posts -%}
     <li>
       <a class="post-link" href="{{ post.url | relative_url }}">
-        <h2>{{ post.title | escape }}</h2>
+        <h3>{{ post.title | escape }}</h3>
         <span class="post-meta"><i>{{ post.date | date: date_format }}</i></span>
+        <hr />
 
         {%- if site.minima.show_excerpts -%}
-          {{ post.excerpt | strip_html | truncatewords: 25}}
+          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         {%- endif -%}
 
       </a>

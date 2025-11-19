@@ -3,11 +3,6 @@ layout: post
 permalink: agent_frameworks_standoff
 ---
 
-* TOC
-{:toc}
-
-
-START
 
 In 2025, AI is the most rapidly evolving field that there is. Everyone is jumping on the LLM-driven train, whether that
 be for automations, tutoring, so on and so forth.
@@ -995,3 +990,8 @@ This standoff shows that while we are still early in the evolution of agentic fr
 philosophical directions emerging. The future might well involve combining strengths: the **breadth of LangChain**, the
 **declarative simplicity of CrewAI**, and the **safety of Pydantic-AI**. Until then, the framework you choose says as
 much about your **engineering philosophy** as it does about your product requirements.
+
+END
+
+* TOC
+{:toc}

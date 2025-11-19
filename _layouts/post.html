@@ -34,10 +34,10 @@ layout: base
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    {% assign delimeter = 'START' -%}
+    {% assign delimeter = 'END' -%}
     {% assign splitted_content = content | strip_newlines | split: delimeter %}
-    {% assign toc = splitted_content[0] %}
-    {% assign main_content = splitted_content[1] %}
+    {% assign main_content = splitted_content[0] %}
+    {% assign toc = splitted_content[1] %}
     <aside class="toc">
       {{toc}}
     </aside>

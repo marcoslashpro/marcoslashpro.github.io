@@ -5,36 +5,40 @@
   min-height: $spacing-unit * 1.865;
   line-height: $base-line-height * $base-font-size * 2.25;
 
+  z-index: 1000;
+  background: $dark-blue;
+  background: linear-gradient(232deg, $dark-blue 30%, $background-color 30%);
+  box-shadow: 0rem 0.01rem 1rem black;
+
   // Positioning context for the mobile navigation icon
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1000;
-  background: var(--primary-blue);
-  background: linear-gradient(332deg, var(--primary-blue) 0%, $background-color 60%);
 }
 
 .site-title {
   @include relative-font-size(1.625);
-  font-size: 1.125rem !important;
+  font-size: 1.5rem !important;
   margin-bottom: 0;
   float: left;
   text-decoration: none;
   color: inherit !important;
+  font-weight: 800;
 
   @include media-query($on-palm) {
     padding-right: 45px;
   }
-
-  &,
-  &:visited {
-    color: $site-title-color;
-  }
 }
 
-.site-title:hover,
+.site-title:hover {
+  color: $light-blue !important;
+  transition: color 350ms ease-in-out !important;
+  text-decoration: none !important;
+}
+
+
 .page-link:hover {
-  color: $secondary-red !important;
+  color: $test-bordeax !important;
   transition: color 350ms ease-in-out !important;
   text-decoration: none !important;
 }
@@ -137,8 +141,8 @@
   border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
 
-  background: var(--primary-blue);
-  background: linear-gradient(332deg, var(--primary-blue) 0%, $background-color 60%);
+  background: $light-blue;
+  background: linear-gradient(332deg, $light-blue 0%, $background-color 60%);
 }
 
 .footer-heading {
@@ -236,51 +240,54 @@
 
 .post-list {
   margin-left: 0rem;
-  margin-top: 2rem;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   >li {
-
-    >h3 {
-      margin: 0;
-    }
 
     >p {
       font-weight: 100 !important;
       text-overflow: ellipsis;
     }
 
+    hr {
+      margin: 0px !important;
+    }
+
     margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
+    max-width: 24rem;
+    min-height: 10rem;
 
-    border: 0.2rem solid transparent;
-    border-image: linear-gradient(166deg,
-      var(--primary-blue) 0%,
-      $background-color 50%) 1;
-
+    box-shadow: 1px 0px 3px black;
+    border: 0.3rem solid $light-blue;
+    // border-image: linear-gradient(166deg,
+    //   $light-blue 0%,
+    //   $background-color 50%) 1;
     transition: transform 0.3s ease-in-out,
     border-image 0.4s ease-in-out,
+    box-shadow 0.5s ease-in-out
   }
 
-  span.post-meta,
-  a.post-link {
-    transition: color 0.3s ease-in-out;
-    display: inherit;
-    flex-direction: column;
+  @media screen and (max-width: 870px) {
+    > li {
+      max-width: none;
+    }
   }
 
   >li:hover {
-    border: 0.2rem solid transparent;
+    border: 0.3rem solid transparent;
     border-image: linear-gradient(166deg,
-        $secondary-red 0%,
+        $test-bordeax 0%,
         $background-color 90%) 1;
     /* The '1' slice value is necessary to show the whole border */
 
     transform: scale(1.01);
+    box-shadow: 0px 0px 5px 1px black;
 
     span.post-meta {
-      color: var(--primary-blue) !important;
+      color: $light-blue !important;
     }
 
     a.post-link {
@@ -295,25 +302,34 @@
   }
 }
 
-span.post-meta, a.post-link > h2 {
-  align-self: center;
-}
 
-.post-meta {
-  color: $brand-color;
-}
-
-.post-link {
-  display: block;
+a.post-link {
   @include relative-font-size(1.5);
   text-decoration: none !important;
-  margin: 0.5rem;
+  transition: color 0.3s ease-in-out;
 
   color: inherit !important;
+  display: flex;
+  flex-direction: column;
 
-  >h2 {
-    margin-bottom: 0.5rem !important;
-    font-weight: bolder;
+  span.post-meta {
+    display: flex;
+    align-self: center;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 0.5rem;
+  }
+
+  >h3 {
+    font-weight: 600;
+    display: flex;
+    align-self: center;
+    margin: 0.5rem;
+  }
+
+  >p {
+    line-height: 1.4;
+    margin: 0.5rem;
+    opacity: 0.85;
   }
 }
 
@@ -351,8 +367,7 @@ span.post-meta, a.post-link > h2 {
     margin-top: 3px
   }
 
-  color: $secondary-red !important;
-  ;
+  color: $light-bordeax !important;
 }
 
 
