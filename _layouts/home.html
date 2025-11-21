@@ -28,8 +28,6 @@ layout: base
       <a class="post-link" href="{{ post.url | relative_url }}">
         <h3>{{ post.title | escape }}</h3>
         <span class="post-meta"><i>{{ post.date | date: date_format }}</i></span>
-        <hr />
-
         {%- if site.minima.show_excerpts -%}
           <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         {%- endif -%}
