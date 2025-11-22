@@ -565,7 +565,6 @@ table {
   position: absolute;
   top: 9px;
   right: 15px;
-  background-color: var(--minima-background-color);
   border: 1px solid var(--minima-border-color-01);
   border-radius: 5px;
   text-align: right; }
@@ -877,6 +876,12 @@ a.post-link:hover > h3 {
 /**
  * Media Queries
  */
+.blue-nav-background {
+  display: inline-flex;
+  padding-left: 1rem;
+  background-color: #001C5D;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%); }
+
 .spacer {
   margin-top: 55.95px; }
 
