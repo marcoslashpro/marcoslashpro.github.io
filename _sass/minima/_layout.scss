@@ -415,6 +415,7 @@ a.post-link:hover {
 }
 
 .post-content {
+  margin: $spacing-unit;
   margin-bottom: $spacing-unit;
 
   h1,
@@ -452,6 +453,57 @@ a.post-link:hover {
 
   h6 {
     @include relative-font-size(1.0625);
+  }
+}
+
+.post-toc {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .post {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    max-height: 100%;
+
+    >.post-toc {
+      display: block;
+      grid-column: 1 / 2;
+      position: sticky;
+      top: $spacing-unit * 1.865 * 1.5;
+      align-self: start;
+      max-height: 100%;
+    }
+
+    >.post-main-content {
+      grid-column: 2 / 3;
+      margin: 2rem;
+    }
+  }
+}
+
+
+#markdown-toc a {
+  color: black !important;
+}
+
+>#markdown-toc a:hover {
+  text-decoration: underline;
+  color: $light-blue !important;
+  transition: color 150ms ease-in-out;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  #markdown-toc a {
+    color: white !important;
+  }
+
+  #markdown-toc a:hover {
+    color: $light-bordeax !important;
+    transition: color 150ms ease-in-out;
+    text-decoration: none;
   }
 }
 

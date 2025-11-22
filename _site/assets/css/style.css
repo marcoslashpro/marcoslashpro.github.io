@@ -806,6 +806,7 @@ a.post-link:hover > h3 {
       font-size: 2.625rem; } }
 
 .post-content {
+  margin: 30px;
   margin-bottom: 30px; }
   .post-content h1,
   .post-content h2,
@@ -831,6 +832,42 @@ a.post-link:hover > h3 {
   .post-content h6 {
     font-size: 1.0625rem; }
 
+.post-toc {
+  display: none; }
+
+@media screen and (min-width: 768px) {
+  .post {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    max-height: 100%; }
+    .post > .post-toc {
+      display: block;
+      grid-column: 1 / 2;
+      position: sticky;
+      top: 83.925px;
+      align-self: start;
+      max-height: 100%; }
+    .post > .post-main-content {
+      grid-column: 2 / 3;
+      margin: 2rem; } }
+#markdown-toc a {
+  color: black !important; }
+
+> #markdown-toc a:hover {
+  text-decoration: underline;
+  color: #0037AE !important;
+  transition: color 150ms ease-in-out;
+  text-decoration: none; }
+
+@media (prefers-color-scheme: dark) {
+  #markdown-toc a {
+    color: white !important; }
+
+  #markdown-toc a:hover {
+    color: #AE0037 !important;
+    transition: color 150ms ease-in-out;
+    text-decoration: none; } }
 .social-media-list, .pagination {
   display: table;
   margin: 0 auto; }
