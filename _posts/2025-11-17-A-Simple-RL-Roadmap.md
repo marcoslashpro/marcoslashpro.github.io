@@ -33,7 +33,7 @@ I created this **roadmap** because I wanted to put something out there that I wi
 >
 
 
-### **MDP (Markov-Decision-Process)**
+### MDP (Markov-Decision-Process)
 
 This is the base of any kind of **RL algorithm** (**model-based** or **model-free**) is the Markov-Decision-Process. RL *problems* are *modeled* as MDPs. Algorithms then *solve* these MDPs. Model-based algorithms explicitly learn or use the MDP's transitions and rewards; model-free algorithms learn optimal behavior without explicitly learning these models.
 
@@ -176,7 +176,7 @@ Now, after identifying the **models,** and the **goal** of **RL,** we can march 
 > *Finding the **optimal policy** that maximizes the **expected cumulative reward***
 > 
 
-### **Policy**
+### Policy
 
 The role that the **policy** plays in **RL** is best described as follows:
 

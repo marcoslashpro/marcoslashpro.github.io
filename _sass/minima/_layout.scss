@@ -105,6 +105,13 @@
     flex-direction: column;
     align-items: start;
     padding: 1rem;
+    background-color: $background-color;
+
+    .blue-nav-background {
+      background-color: inherit;
+      padding: 0;
+      clip-path: none;
+    }
 
     .page-link {
       color: $light-blue !important;
@@ -121,7 +128,7 @@
     color: white !important;
   }
 
-  @media screen and (min-width: $on-medium) {
+  @media screen and (min-width: 768px) {
     position: static;
     float: right;
     border: none;
@@ -462,18 +469,35 @@ a.post-link:hover {
 
 @media screen and (min-width: 768px) {
   .post {
-    margin: 2rem;
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    max-height: 100%;
+    height: 100%;
 
     >.post-toc {
-      display: block;
+      display: flex;
+      flex-direction: column;
       grid-column: 1 / 2;
       position: sticky;
       top: $spacing-unit * 1.865 * 1.5;
       align-self: start;
       max-height: 100%;
+      margin-top: 2rem;
+      overflow-y: hidden;
+      scrollbar-color: $background-color transparent;
+
+      >h3 {
+        display: flex;
+        align-self: center;
+      }
+
+      >p {
+        display: none;
+      }
+    }
+
+    >.post-toc:hover {
+      scrollbar-color: $dark-blue transparent;
+      transition: scrollbar-color 350ms ease-in-out;
     }
 
     >.post-main-content {
@@ -484,22 +508,34 @@ a.post-link:hover {
 }
 
 
-#markdown-toc a {
-  color: black !important;
-}
+#markdown-toc {
+  list-style: none;
+  max-height: calc(85vh - 5rem);
+  overflow-y: auto;
+  padding-right: 0.5rem;
 
->#markdown-toc a:hover {
-  text-decoration: underline;
-  color: $light-blue !important;
-  transition: color 150ms ease-in-out;
-  text-decoration: none;
+  ul,
+  li {
+    padding: 0.1rem;
+  }
+
+  a {
+    color: $text-color !important;
+
+    strong {
+      color: $text-color !important;
+    }
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: $light-blue !important;
+    transition: color 150ms ease-in-out;
+    text-decoration: none;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-  #markdown-toc a {
-    color: white !important;
-  }
-
   #markdown-toc a:hover {
     color: $light-bordeax !important;
     transition: color 150ms ease-in-out;

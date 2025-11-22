@@ -277,7 +277,7 @@ table {
   }
 }
 
-// Custom Variables
-:root {
-  --primary-blue: #0D6EFD;
+mjx-container {
+  overflow-x: auto;
+  overflow-y: hidden;
 }

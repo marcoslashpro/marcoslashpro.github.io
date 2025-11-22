@@ -434,7 +434,7 @@ The result is a framework where you describe intentions, and the execution plan 
 
 ---
 
-### **Getting Started**
+### Getting Started
 
 Setup is straightforward. Let’s create a project and install the dependencies:
 
@@ -459,7 +459,7 @@ This is all we need.
 
 ---
 
-### **Tools**
+### Tools
 
 Unlike `pydantic-ai`, `crewAI` doesn’t ship with built-in tools. Instead, it provides the scaffolding to build your own
 — or you can install `crewai-tools` for batteries-included functionality. Even better, you can wrap existing `langchain`
@@ -492,7 +492,7 @@ This is simply a thin wrapper over a `langchain` tool. `name` and `description` 
 
 ---
 
-### **Agents**
+### Agents**
 
 In `crewAI`, an agent is defined declaratively: you provide a **role**, a **goal**, and a **backstory**. The framework
 takes care of message passing, memory, and orchestration.
@@ -551,7 +551,7 @@ reasoning control, code execution modes, iteration limits).
 
 ---
 
-### **Tasks**
+### Tasks**
 
 Tasks define *what the crew is supposed to accomplish*. They can be listed sequentially or managed hierarchically by a
 manager agent.
@@ -575,7 +575,7 @@ The `{query}` parameter will be injected at runtime.
 
 ---
 
-### **Crew**
+### Crew
 
 At the top level, a **crew** is the orchestrator. You provide it with agents, tasks, and (optionally) a manager agent if
 you want hierarchical execution.
@@ -597,7 +597,7 @@ Here, the `chatbot` serves as the manager, directing the researcher and mathemat
 
 ---
 
-### **Running the Crew**
+### Running the Crew
 
 We can expose this via a simple CLI in `__main__.py`:
 
@@ -621,7 +621,7 @@ Notice how simple `kickoff` is: you pass the required inputs, and the crew execu
 
 ---
 
-### **Examples**
+### Examples
 
 Research:
 
@@ -648,7 +648,7 @@ Average speed = 54 mph
 
 ---
 
-### **Final Thoughts**
+### Final Thoughts
 
 `crewAI` positions itself as one of the most accessible multi-agent frameworks available today. The declarative style
 lowers the barrier to entry: you describe *what* you want, not *how* to coordinate agents. The abstractions are clear,
@@ -695,7 +695,7 @@ With that context in mind, let’s see how it works in practice.
 
 ---
 
-### **Hello World**
+### Hello World
 
 We’ll start with a minimal setup.
 
@@ -744,7 +744,7 @@ That’s our first working agent. Let’s scale it up.
 
 ---
 
-### **Agents and Tools**
+### Agents and Tools
 
 We’ll define three agents:
 
@@ -793,7 +793,7 @@ builtin_tools=[CodeExecutionTool()]
 
 ---
 
-### **Delegation with Tools**
+### Delegation with Tools
 
 The recommended way to enable multi-agent handoff is by exposing specialist agents as tools for the manager agent.
 
@@ -824,7 +824,7 @@ and the similarity to `FastAPI`’s dependency injection system is no accident.
 
 ---
 
-### **Running the System**
+### Running the System
 
 We can wrap this in a simple CLI:
 
@@ -845,7 +845,7 @@ main()
 
 ---
 
-### **Examples**
+### Examples
 
 Research:
 
@@ -876,7 +876,7 @@ What was the train’s average speed for the entire trip?"
 
 ---
 
-### **Testing and Evaluation**
+### Testing and Evaluation
 
 Where most frameworks stop, `pydantic-ai` keeps going. Testing is not an afterthought — it’s part of the design.
 
@@ -923,7 +923,7 @@ CI pipelines? `pydantic-ai` takes a significant step in that direction.
 
 ---
 
-### **Final Thoughts**
+### Final Thoughts
 
 I came away impressed by how much `pydantic-ai` gets right. The learning curve isn’t steep, yet the framework supports
 deep customization. Strong type safety, built-in control-flow mechanisms (`ModelRetry`, `FallbackModel`,
