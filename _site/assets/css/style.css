@@ -845,7 +845,8 @@ a.post-link:hover > h3 {
   .post {
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    height: 100%; }
+    height: 100%;
+    line-height: 1.5; }
     .post > .post-toc {
       display: flex;
       flex-direction: column;
@@ -972,7 +973,7 @@ a.post-link:hover > h3 {
   grid-row: 1 / 3;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   margin: 1rem; }
   .homepage-hero-wrapper > .profile-pic-wrapper > img {
     max-height: 20rem;
@@ -982,7 +983,10 @@ a.post-link:hover > h3 {
 .homepage-hero-wrapper > .hero-text-wrapper {
   grid-row: 1 / 3;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  letter-spacing: 0.03rem; }
+  .homepage-hero-wrapper > .hero-text-wrapper p {
+    line-height: 1.4; }
   .homepage-hero-wrapper > .hero-text-wrapper h1 {
     font-weight: 800;
     margin: 2rem 0rem 2rem 0rem; }
@@ -1025,3 +1029,5 @@ a.small_icon img {
 
   .homepage-hero-wrapper {
     border-color: white; } }
+.wrapper .post {
+  display: block; }
